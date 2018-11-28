@@ -51,6 +51,6 @@
         <Canvas Name="canvasGameOver" Visibility="Collapsed">
             <TextBlock Text="Game Over" Canvas.Left="48" Canvas.Top="170" FontSize="50" Foreground="#FFBF3B3B"/>
         </Canvas>
-
+  
     </Canvas>
 </Window>
