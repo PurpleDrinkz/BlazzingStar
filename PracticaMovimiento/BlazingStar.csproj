@@ -133,12 +133,13 @@
     <Resource Include="Assets\Score.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\Background.mp4">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Space01.jpg" />
+    <Resource Include="Assets\Space02.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

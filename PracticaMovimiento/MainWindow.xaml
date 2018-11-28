@@ -11,13 +11,14 @@
         <MediaElement Height="100" Canvas.Top="349" Width="100" Source="Assets/MainTheme.wav" Volume="100"/>
 
         <Canvas Name="canvasInicio" Visibility="Visible">
+            <Image Height="1027" Canvas.Left="-191" Width="783" Source="Assets/Space01.jpg" Canvas.Top="-208"/>
             <Image Height="187" Canvas.Left="10" Canvas.Top="28" Width="332" Source="Assets/BlazingStarLogo.png" RenderTransformOrigin="0.488,0.81"/>
             <Image Height="94" Canvas.Left="33" Canvas.Top="262" Width="93" Source="Assets/navePlayer1.png"/>
             <Image Height="89" Canvas.Left="140" Canvas.Top="273" Width="85" Source="Assets/navePlayer2.png"/>
             <Image Height="80" Canvas.Left="230" Canvas.Top="271" Width="80" Source="Assets/navePlayer3.png"/>
-            <RadioButton x:Name="rbPlayer1" Content="Arwing" Canvas.Left="50" Canvas.Top="252" Checked="rbPlayer1_Checked" IsChecked="True"/>
-            <RadioButton x:Name="rbPlayer2" Content="Phantom" Canvas.Left="148" Canvas.Top="252" Checked="rbPlayer2_Checked"/>
-            <RadioButton x:Name="rbPlayer3" Content="Fighter" Canvas.Left="239" Canvas.Top="252" Checked="rbPlayer3_Checked"/>
+            <RadioButton x:Name="rbPlayer1" Content="ARWING" Canvas.Left="50" Canvas.Top="252" Checked="rbPlayer1_Checked" IsChecked="True"/>
+            <RadioButton x:Name="rbPlayer2" Content="PHANTOM" Canvas.Left="148" Canvas.Top="252" Checked="rbPlayer2_Checked"/>
+            <RadioButton x:Name="rbPlayer3" Content="FIGHTER" Canvas.Left="239" Canvas.Top="252" Checked="rbPlayer3_Checked"/>
 
             <Button x:Name="Start" Canvas.Left="104" Canvas.Top="364" Width="148" Height="58" Click="Start_Click">
 
@@ -31,6 +32,7 @@
         </Canvas>
 
         <Canvas Visibility="Collapsed" Name="miCanvas" KeyDown="miCanvas_KeyDown" KeyUp="miCanvas_KeyUp" Focusable="True" Background="White">
+            <Image Height="1083" Canvas.Left="-191" Width="835" Source="Assets/Space02.png" Canvas.Top="-208"/>
             <Image Height="100" Canvas.Left="125" Canvas.Top="-9" Width="100" Source="Assets/Score.png"/>
             <TextBlock x:Name="lblPuntos" Canvas.Left="142" TextWrapping="Wrap" Text="00:00" Canvas.Top="38" Height="27" Width="67" FontSize="20">
                 <TextBlock.Foreground>
@@ -40,7 +42,6 @@
                     </LinearGradientBrush>
                 </TextBlock.Foreground>
             </TextBlock>
-
             <Image Name="imgRana" Source="Assets/navePlayer1.png" Width="90" Height="90" Stretch="Fill" Canvas.Left="127" Canvas.Top="355" RenderTransformOrigin="0.5,0.5"/>
             <Image Name="imgCarro" Source="Assets/meteorito.png" Width="66" Height="68" Stretch="Fill" Canvas.Left="245" Canvas.Top="10" />
             <TextBlock x:Name="lblInterseccionX" Canvas.Left="-164" TextWrapping="Wrap" Text="No hay intersección en X" Canvas.Top="10"/>
@@ -51,6 +52,6 @@
         <Canvas Name="canvasGameOver" Visibility="Collapsed">
             <TextBlock Text="Game Over" Canvas.Left="48" Canvas.Top="170" FontSize="50" Foreground="#FFBF3B3B"/>
         </Canvas>
-  
+
     </Canvas>
 </Window>
